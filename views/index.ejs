@@ -1,0 +1,66 @@
+<!-- views/index.ejs -->
+<%- include("partials/header") %>
+
+<!-- Carousel Section -->
+<div id="homepageCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://res.cloudinary.com/djulyfaml/image/upload/v1751966775/Lab_Home_Page_wpq52h.jpg" class="d-block w-100" alt="Slide 1">
+      <div class="carousel-caption text-center">
+        <h2>Your Path to Better Health Care</h2>
+        <p>Book lab tests with ease from anywhere</p>
+        <a href="/contact" class="btn btn-outline-light">Book a Test</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://res.cloudinary.com/djulyfaml/image/upload/v1752046643/diabetic-woman-wearing-glucose-patch-sensor-min_g3xybe.jpg" class="d-block w-100" alt="Slide 2">
+      <div class="carousel-caption text-center">
+        <h2>Home Sample Collection</h2>
+        <p>Healthcare that comes to you</p>
+        <a href="/services" class="btn btn-outline-light">Explore Services</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://res.cloudinary.com/djulyfaml/image/upload/v1752046981/black-woman-doing-fitness-home-min_mvq5a2.jpg" class="d-block w-100" alt="Slide 3">
+      <div class="carousel-caption text-center">
+        <h2>Affordable Wellness Packages</h2>
+        <p>Get comprehensive health checks without breaking the bank</p>
+        <a href="/packages" class="btn btn-outline-light">View Packages</a>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#homepageCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#homepageCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- Highlights Section -->
+<section class="container py-5">
+  <div class="row text-center">
+    <div class="col-md-4">
+      <img src="https://res.cloudinary.com/djulyfaml/image/upload/v1751966749/Health_Blog_smlluj.jpg" class="mb-3" alt="Health Checkup" width="80" height="80">
+      <h4>General Health Check</h4>
+      <p>Discover our comprehensive wellness checks tailored for your needs.</p>
+      <a href="/packages" class="btn btn-primary">View Packages</a>
+    </div>
+    <div class="col-md-4">
+      <img src="https://res.cloudinary.com/djulyfaml/image/upload/v1751966760/Home_services_xufj6k.png" class="mb-3" alt="Home Service" width="80" height="80">
+      <h4>Home Services</h4>
+      <p>Sample collection at your doorstep. Fast, safe and convenient.</p>
+      <a href="/services" class="btn btn-primary">Learn More</a>
+    </div>
+    <div class="col-md-4">
+      <img src="https://res.cloudinary.com/djulyfaml/image/upload/v1751968563/support_6677700_1_ylwiuh.png" class="mb-3" alt="Contact Us" width="80" height="80">
+      <h4>Talk to Us</h4>
+      <p>Need help choosing a test or package? Contact us today.</p>
+      <a href="/contact" class="btn btn-primary">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<%- include("partials/footer") %>

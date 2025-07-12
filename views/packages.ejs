@@ -1,0 +1,254 @@
+<!-- views/packages.ejs -->
+<%- include("partials/header") %>
+
+<section class="container py-5">
+  <h2 class="text-center mb-4 page-section-heading">Our Health Packages</h2>
+  <p class="text-center mb-5">Explore our detailed diagnostic packages. Click each to view full test list.</p>
+
+  <div class="accordion" id="packagesAccordion">
+
+    <!-- BASIC HEALTH CHECK -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="basicHead">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#basic" aria-expanded="false" aria-controls="basic">
+          BASIC HEALTH CHECK
+        </button>
+      </h2>
+      <div id="basic" class="accordion-collapse collapse" aria-labelledby="basicHead" data-bs-parent="#packagesAccordion">
+        <div class="accordion-body">
+          <ul>
+            <li>Full Blood Count</li>
+            <li>ESR</li>
+            <li>Fasting Plasma Glucose</li>
+            <li>Physical Examination</li>
+            <li>Stool Analysis</li>
+            <li>Hpylori (Stool)</li>
+            <li>Liver Function Tests: SGPT, SGOT, ALP, Bilirubin (Direct & Indirect)</li>
+            <li>Lipid Profile: Total Cholesterol, Triglycerides</li>
+            <li>Renal Function Test: Urea, Creatinine, eGFR</li>
+            <li>Urine Microscopy & Urinalysis</li>
+            <li>Hepatitis B & C Viral Antigen</li>
+            <li>HIV I & II</li>
+          </ul>
+          <p class="package-price">₦68,000</p>
+          <a href="/contact" class="btn btn-outline-primary">Contact Us to Book</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- STANDARD HEALTH CHECK -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="standardHead">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#standard" aria-expanded="false" aria-controls="standard">
+          STANDARD HEALTH CHECK (MALE & FEMALE)
+        </button>
+      </h2>
+      <div id="standard" class="accordion-collapse collapse" aria-labelledby="standardHead" data-bs-parent="#packagesAccordion">
+        <div class="accordion-body">
+          <ul>
+            <li>Thyroid Function Tests: Free T4, TSH</li>
+            <li>Full Blood Count</li>
+            <li>ESR</li>
+            <li>Fasting Plasma Glucose</li>
+            <li>Physical Examination</li>
+            <li>Stool Analysis</li>
+            <li>Hpylori (Stool)</li>
+            <li>Liver Function Tests: SGPT, SGOT, ALP, Bilirubin (Direct & Indirect)</li>
+            <li>Lipid Profile: Total Cholesterol, Triglycerides, LDL-C, HDL-C, HDL/LDL Ratio</li>
+            <li>Renal Function Test: Sodium, Chloride, Potassium, Urea, Creatinine, eGFR</li>
+            <li>Urine Microscopy & Urinalysis</li>
+            <li>Hepatitis B & C Viral Antigen</li>
+            <li>HIV I & II</li>
+            <li>VDRL</li>
+          </ul>
+          <p class="package-price">₦100,000</p>
+          <a href="/contact" class="btn btn-outline-primary">Contact Us to Book</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- GOLD HEALTH CHECK (MALE) -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="goldMaleHead">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#goldMale" aria-expanded="false" aria-controls="goldMale">
+          GOLD HEALTH CHECK (MALE)
+        </button>
+      </h2>
+      <div id="goldMale" class="accordion-collapse collapse" aria-labelledby="goldMaleHead" data-bs-parent="#packagesAccordion">
+        <div class="accordion-body">
+          <ul>
+            <li>2 Hours Post Prandial Glucose</li>
+            <li>Liver Function Tests: SGPT, SGOT, ALP, Bilirubin (Direct & Indirect), Total Protein, Albumin</li>
+            <li>Lipid Profile: Total Cholesterol, Triglycerides, LDL-C, HDL-C, HDL/LDL Ratio</li>
+            <li>Renal Function Test: Sodium, Chloride, Potassium, Urea, Creatinine, eGFR</li>
+            <li>Thyroid Function Tests: Free T3, Free T4, TSH</li>
+            <li>PSA (Prostate-Specific Antigen)</li>
+            <li>Full Blood Count, ESR, Fasting Plasma Glucose, HbA1C</li>
+            <li>Phosphorus, Calcium, Uric Acid (Serum)</li>
+            <li>Stool Analysis, Hpylori</li>
+            <li>Urine MCS & Urinalysis</li>
+            <li>Hepatitis B & C, HIV I & II, VDRL</li>
+            <li>Physical Examination</li>
+          </ul>
+          <p class="package-price">₦170,000</p>
+          <a href="/contact" class="btn btn-outline-primary">Contact Us to Book</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- GOLD HEALTH CHECK (FEMALE) -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="goldFemaleHead">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#goldFemale" aria-expanded="false" aria-controls="goldFemale">
+          GOLD HEALTH CHECK (FEMALE)
+        </button>
+      </h2>
+      <div id="goldFemale" class="accordion-collapse collapse" aria-labelledby="goldFemaleHead" data-bs-parent="#packagesAccordion">
+        <div class="accordion-body">
+          <ul>
+            <li>All items in Gold Male Package</li>
+            <li>CA-125</li>
+            <li>HVS MCS (optional)</li>
+            <li>Pap Smear (optional)</li>
+          </ul>
+          <p class="package-price">₦180,000</p>
+          <a href="/contact" class="btn btn-outline-primary">Contact Us to Book</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRE-WEDDING -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="preWeddingHead">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#preWedding" aria-expanded="false" aria-controls="preWedding">
+          PRE-WEDDING SCREENING
+        </button>
+      </h2>
+      <div id="preWedding" class="accordion-collapse collapse" aria-labelledby="preWeddingHead" data-bs-parent="#packagesAccordion">
+        <div class="accordion-body">
+          <h5>Basic</h5>
+          <ul>
+            <li>Full Blood Count, HIV I & II(Rapid)</li>
+            <li>HBsAg, Blood Group, Genotype</li>
+            <li>Hepatitis C Viral Antigen</li>
+            <li>Pregnancy Test (optional)</li>
+          </ul>
+          <p class="package-price">₦21,000</p>
+          <h5>Standard</h5>
+          <ul>
+            <li>All Basic Tests</li>
+            <li>Chlamydia (Swab), VDRL</li>
+          </ul>
+          <p class="package-price">₦36,500</p>
+          <a href="/contact" class="btn btn-outline-primary">Contact Us to Book</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- STD SCREENING -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="stdScreenHead">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#stdScreen" aria-expanded="false" aria-controls="stdScreen">
+          STD SCREENING
+        </button>
+      </h2>
+      <div id="stdScreen" class="accordion-collapse collapse" aria-labelledby="stdScreenHead" data-bs-parent="#packagesAccordion">
+        <div class="accordion-body">
+          <h5>Basic</h5>
+          <ul>
+            <li>HIV I & II, VDRL, Hepatitis B-HBsAg, Hepatitis C</li>
+          </ul>
+          <p class="package-price">₦13,500</p>
+          <h5>Standard</h5>
+          <ul>
+            <li>All Basic Tests</li>
+            <li>Urinalysis, MCS, Gonorrhea, Chlamydia (Swab), HVS Microscopy (optional)</li>
+          </ul>
+          <p class="package-price">₦48,000</p>
+          <a href="/contact" class="btn btn-outline-primary">Contact Us to Book</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- HORMONES & MENSTRUAL -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="hormoneHead">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hormone" aria-expanded="false" aria-controls="hormone">
+          HORMONE / MENSTRUAL / OVULATORY PROFILE
+        </button>
+      </h2>
+      <div id="hormone" class="accordion-collapse collapse" aria-labelledby="hormoneHead" data-bs-parent="#packagesAccordion">
+        <div class="accordion-body">
+          <h5>Male Hormone Profile</h5>
+          <ul>
+            <li>LH, FSH, Prolactin, Testosterone, ESR</li>
+          </ul>
+          <p class="package-price">₦45,000</p>
+          <h5>Female Hormone Profiles</h5>
+          <ul>
+            <li>Profile 1: LH, FSH, Prolactin</li>
+            <li>Profile 2: LH, FSH, Prolactin, Progesterone</li>
+            <li>Profile 3: LH, FSH, Prolactin, Progesterone, Estradiol E2</li>
+          </ul>
+          <p class="package-price">₦45,000-₦60,000</p>
+          <h5>Menstrual Disorders / PCOS</h5>
+          <ul>
+            <li>Female Hormone Profile 1</li>
+            <li>Thyroxine T4, Testosterone, DHEAS, AMH</li>
+          </ul>
+          <h5>Ovulatory Profile</h5>
+          <ul>
+            <li>LH, FSH (Day 13-16), Prolactin & Progesterone (Day 23-26)</li>
+          </ul>
+          <p class="package-price">₦45,000</p>
+          <a href="/contact" class="btn btn-outline-primary">Contact Us to Book</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARDIO & STAFF -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="cardioHead">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cardio" aria-expanded="false" aria-controls="cardio">
+          CARDIOVASCULAR WELLNESS
+        </button>
+      </h2>
+      <div id="cardio" class="accordion-collapse collapse" aria-labelledby="cardioHead" data-bs-parent="#packagesAccordion">
+        <div class="accordion-body">
+          <ul>
+            <li>HDL-C, LDL-C, Triglycerides</li>
+            <li>HbA1C, CRP</li>
+            <li>Total Cholesterol, HDL/LDL Ratio</li>
+          </ul>
+          <p class="package-price">₦45,000</p>
+          <a href="/contact" class="btn btn-outline-primary">Contact Us to Book</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="staffHead">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#staff" aria-expanded="false" aria-controls="staff">
+          DOMESTIC STAFF / PRE-EMPLOYMENT / DRIVER SCREENING
+        </button>
+      </h2>
+      <div id="staff" class="accordion-collapse collapse" aria-labelledby="staffHead" data-bs-parent="#packagesAccordion">
+        <div class="accordion-body">
+          <ul>
+            <li>HIV Testing, HBsAg, Hepatitis C</li>
+            <li>Blood Group, Genotype</li>
+            <li>Urinalysis</li>
+            <li>Pregnancy Test (optional)</li>
+            <li>Drug of Abuse (Optional)</li>
+            <li>Physical Examination</li>
+          </ul>
+          <p class="package-price">₦20,000</p>
+          <a href="/contact" class="btn btn-outline-primary">Contact Us to Book</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<%- include("partials/footer") %>
